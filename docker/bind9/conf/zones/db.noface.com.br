@@ -1,0 +1,20 @@
+@       IN      SOA     ns1.noface.com.br. admin.noface.com.br. (
+                              3         ; Serial
+             604800     ; Refresh
+              86400     ; Retry
+            2419200     ; Expire
+             604800 )   ; Negative Cache TTL
+
+; name servers - NS records
+    IN      NS      ns1.noface.com.br.
+
+; name servers - A records
+ns1.noface.com.br.              IN      A      192.168.241.154
+; 192.168.241.0/24 - A records
+databases.noface.com.br.        IN      A      192.168.241.153
+apis.noface.com.br.             IN      A      192.168.241.156
+sso.noface.com.br.              IN      A      192.168.241.157
+service-registry.noface.com.br  IN      A      192.168.241.157
+apis-expose.noface.com.br.      IN      A      192.168.241.158
+test.noface.com.br.             IN      A      192.168.241.159
+

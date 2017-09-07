@@ -1,0 +1,5 @@
+{
+    "BASE_URL": "http://localhost:7777",
+    "PAIS": "/pais",
+    "UNIDADE_FEDERATIVA": "/unidade_federativa"
+}

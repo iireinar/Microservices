@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <header class="panel-heading">Unidades Federativas - Listagem</header>
+
+            <div class="panel-body">
+                <form class="form-horizontal" [formGroup]="form" (ngSubmit)="findExample()">
+                    <div class="form-group">
+                        <default-input formControlName="codigo" label="C&oacute;digo"></default-input>
+                    </div>
+                    <div class="form-group">
+                        <default-input formControlName="nome" label="Nome"></default-input>
+                    </div>
+                    <div class="form-group">
+                        <default-autocomplete [(target)]="targetPais" (onSelect)="paisSelect($event)" inputEl="nome" [urlSource]=paisSource label="Pa&iacute;s"></default-autocomplete>
+                    </div>
+                    <div class="form-group">
+                        <default-form-buttons label="Buscar" (onClear)="clear()" (onNew)="newRegister()"></default-form-buttons>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+</div>
+
+<default-datatable [columns]=columns [columnsValue]=columnsValue [(data)]="data" [(hasData)]="hasData" (onDelete)="delete($event)" (onEdit)="edit($event)"></default-datatable>

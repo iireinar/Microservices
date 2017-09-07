@@ -1,0 +1,27 @@
+<div class="container" *ngIf=showView>
+    <form class="login-form" [formGroup]="form" (ngSubmit)="doRegister()">
+        <div class="login-wrap">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="icon_profile"></i></span>
+                <input type="text" class="form-control" placeholder="Username" autofocus formControlName="username">
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-addon"><i class="icon_mail"></i></span>
+                <input type="email" class="form-control" placeholder="Email" formControlName="email">
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-addon"><i class="icon_key_alt"></i></span>
+                <input type="password" class="form-control" placeholder="Password" formControlName="password">
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-addon"><i class="icon_key_alt"></i></span>
+                <input type="password" class="form-control" placeholder="Confirm Password" formControlName="confirm_password">
+            </div>
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Register</button>
+        </div>
+    </form>
+</div>

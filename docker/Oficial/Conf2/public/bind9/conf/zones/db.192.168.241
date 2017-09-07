@@ -1,0 +1,20 @@
+$TTL    604800
+@       IN      SOA     ns1.noface.com.br. admin.noface.com.br. (
+                              3         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+; name servers
+    IN      NS      ns1.noface.com.br.
+
+; PTR Records
+173 IN      PTR     ns1.noface.com.br.              ; 192.168.241.173
+172 IN      PTR     databases.noface.com.br.        ; 192.168.241.172
+173 IN      PTR     sso.noface.com.br               ; 192.168.241.173
+173 IN      PTR     service-registry.noface.com.br. ; 192.168.241.173
+173 IN      PTR     apis.noface.com.br.             ; 192.168.241.173
+173 IN      PTR     geral.noface.com.br.            ; 192.168.241.173
+173 IN      PTR     produtos.noface.com.br.         ; 192.168.241.173
+173 IN      PTR     vendas.noface.com.br.           ; 192.168.241.173
+175 IN      PTR     apis-private.noface.com.br      ; 192.168.241.175

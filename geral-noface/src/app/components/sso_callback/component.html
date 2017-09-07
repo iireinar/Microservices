@@ -1,0 +1,7 @@
+<div *ngIf=loading>
+    Validating SSO data...
+</div>
+
+<div *ngIf=error>
+    <button class="btn btn-primary" type="button" (click)="login()">Try Login Again</button>
+</div>

@@ -1,0 +1,10 @@
+{
+    "BASE_URL": "http://localhost:9002/geral",
+    "PAIS": "/pais",
+    "UNIDADE_FEDERATIVA": "/unidade_federativa",
+    "MUNICIPIO": "/municipio",
+    "SSO_LOGIN_URL": "http://localhost:7001/login",
+    "SSO_CLIENT_ID": "XLIGwv1IxdGtFGM",
+    "SSO_VALIDATE_TOKEN": "http://localhost:7001/sso/session/validate",
+    "SSO_SESSION_AUTHORIZE": "http://localhost:7001/sso/session/authorize"
+}

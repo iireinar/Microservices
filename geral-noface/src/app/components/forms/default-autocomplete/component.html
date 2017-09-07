@@ -1,0 +1,11 @@
+<label class="col-sm-2 control-label">{{label}}</label>
+<div class="default-autocomplete col-sm-10">
+    <input type="text" class="form-control" [(ngModel)]="inputValue" (blur)="blurEvent()" (keydown)="keyEvents($event)" (input)="inputEvent($event)">
+
+    <ul *ngIf=showList>
+        <li class="loading" *ngIf=isLoading>Loading...</li>
+        <li class="blank-item" *ngIf=noDataFound>No data found...</li>
+        <li class="blank-item" *ngIf=error>Error while loading data...</li>
+        <li class="item" *ngFor="let row of data;let i=index" (mousedown)="selectOne(row)" (mouseover)="mouseOverEvent(i)" [ngClass]="{'selected': i === itemIndex}">{{row.EL_EXPRESSION}}</li>
+    </ul>
+</div>

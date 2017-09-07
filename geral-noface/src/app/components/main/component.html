@@ -1,0 +1,7 @@
+<section id="main-content" [ngClass]="{'margin-left-0':!session.isLoggedIn}">
+    <section [ngClass]="{'wrapper': session.isLoggedIn}">
+        <app-messages></app-messages>
+
+        <router-outlet></router-outlet>
+    </section>
+</section>

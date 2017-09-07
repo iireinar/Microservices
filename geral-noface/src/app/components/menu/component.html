@@ -1,0 +1,18 @@
+<aside [ngClass]="{'hidden':!session.isLoggedIn}">
+    <div id="sidebar" class="nav-collapse">
+        <ul class="sidebar-menu">
+            <li class="sub-menu">
+                <a href="javascript:;" class="">
+                    <i class="icon_document_alt"></i>
+                    <span>Cadastros</span>
+                    <span class="menu-arrow arrow_carrot-right"></span>
+                </a>
+                <ul class="sub">
+                    <li><a routerLink="/pais">Pa&iacute;ses</a></li>
+                    <li><a routerLink="/unidade_federativa">Unidades Federativas</a></li>
+                    <li><a routerLink="/municipio">Munic&iacute;pios</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</aside>

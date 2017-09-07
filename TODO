@@ -1,0 +1,33 @@
+APIS:
+
+	☐ Setar HEADERS,METHODS e ORIGINS corretos;
+	✔ Ativar cabeçalhos de segurança; @done (February 7th 2017, 17:21)
+	☐ Remover para estrutura externa TOKENS de sessão válidos;
+	✔ Validar TOKEN recebido com SSO; @done (February 7th 2017, 17:21)
+
+VIEW:
+
+	✔ Melhorar forma de renderização de elementos dependentes de sessão; @done (January 31st 2017, 15:00)
+	☐ Utilizar outlets diferente para renderização quando for possível;
+	✔ Adicionar token de autenticação;  @done (January 31st 2017, 15:44)
+
+SERVICE REGISTRY:
+
+	✔ Criar; @done (February 8th 2017, 22:05)
+
+LOAD BALANCER:
+
+	✔ Criar; @done (February 9th 2017, 19:44)
+
+GATEWAY:
+
+	☐ Criar;
+
+PROJETO COM ENTITIES:
+
+	✔ Criar @done (February 8th 2017, 23:05)
+
+PROJETO PARA TRATAR CONTEXTO DE SEGURAÇA
+
+	✔ Criar  @done (February 8th 2017, 23:06)
+	☐ Criar estrutura de login para APIS consumirem serviços no load balancer

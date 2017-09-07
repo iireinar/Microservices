@@ -1,0 +1,9 @@
+zone "noface.com.br" {
+    type master;
+    file "/named/etc/zones/db.noface.com.br";
+};
+
+zone "241.168.85.in-addr.arpa" {
+    type master;
+    file "/named/etc/zones/db.192.168.85";
+};

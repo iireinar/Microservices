@@ -1,0 +1,5 @@
+{
+    "BASE_URL": "/sso",
+    "USER": "/user",
+    "APPLICATION": "/application"
+}

@@ -1,0 +1,10 @@
+{
+    "BASE_URL": "http://192.168.0.101:6002/geral",
+    "PAIS": "/pais",
+    "UNIDADE_FEDERATIVA": "/unidade_federativa",
+    "MUNICIPIO": "/municipio",
+    "SSO_LOGIN_URL": "http://192.168.241.173:5001/login",
+    "SSO_CLIENT_ID": "wJVT0M2b8xMZwrD",
+    "SSO_VALIDATE_TOKEN": "http://192.168.241.173:5001/sso/session/validate",
+    "SSO_SESSION_AUTHORIZE": "http://192.168.241.173:5001/sso/session/authorize"
+}

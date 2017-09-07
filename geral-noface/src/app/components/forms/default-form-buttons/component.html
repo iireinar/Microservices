@@ -1,0 +1,8 @@
+<label class="col-sm-2 control-label"></label>
+<div class="col-sm-10">
+    <input type="submit" value="{{label}}" class="btn btn-primary" />
+    <input type="button" value="Novo" (click)="newRegister()" class="btn btn-success" *ngIf=showNew />
+    <input type="button" value="Deletar" (click)="delete()" class="btn btn-warning" *ngIf=showDelete />
+    <input type="button" value="Limpar" (click)="clear()" class="btn btn-danger" />
+    <input type="button" value="Listar" (click)="list()" class="btn btn-info" *ngIf=showList />
+</div>

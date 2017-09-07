@@ -1,0 +1,69 @@
+buildscript {
+    ext {
+        springBootVersion = '1.5.1.RELEASE'
+        jettyServletsVersion = '9.3.13.v20161014'
+        jacksonVersion = '2.8.6'
+        flywaydbVersion = '4.0.3'
+        commonsIoVersion = '2.5'
+        pjlCompFilterVersion = '1.7'
+        jacksonDatatypeHibernate5Version = '2.8.4'
+        
+    }
+    repositories {
+        mavenCentral()
+        mavenLocal()
+        maven { url "https://repo.spring.io/snapshot" }
+        maven { url "https://repo.spring.io/milestone" }
+        maven { url 'https://repo.spring.io/libs-milestone' }
+        maven { url 'http://192.168.241.171:8081/repository/maven-public/' }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+jar {
+    baseName = 'api-geral-noface'
+    version = '1.0.0.0'
+}
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven { url "https://repo.spring.io/snapshot" }
+    maven { url "https://repo.spring.io/milestone" }
+    maven { url 'https://repo.spring.io/libs-milestone' }
+    maven { url 'http://192.168.241.171:8081/repository/maven-public/' }
+}
+
+
+dependencies {
+    compile("br.com.noface:sso-noface-java-lib:1.0.0.0")
+    compile("br.com.noface:entities-noface:1.0.0.0")
+    compile('org.springframework.cloud:spring-cloud-starter-eureka')
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    compile('org.springframework.boot:spring-boot-starter-data-rest')
+    compile('org.springframework.boot:spring-boot-starter-mail')
+    compile("org.springframework.boot:spring-boot-starter-security")
+    compile("org.springframework.boot:spring-boot-starter-undertow:${springBootVersion}")
+    compile("com.fasterxml.jackson.datatype:jackson-datatype-hibernate5:${jacksonDatatypeHibernate5Version}")
+    compile("org.eclipse.jetty:jetty-servlets:${jettyServletsVersion}")
+    compile("com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}")
+    compile("commons-io:commons-io:${commonsIoVersion}")
+    compile("net.sourceforge.pjl-comp-filter:pjl-comp-filter:${pjlCompFilterVersion}")
+    compile('mysql:mysql-connector-java')
+    compile("org.flywaydb:flyway-gradle-plugin:${flywaydbVersion}")
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:Dalston.M1"
+    }
+}

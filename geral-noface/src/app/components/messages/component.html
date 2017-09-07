@@ -1,0 +1,19 @@
+<div class="alert alert-block alert-danger fade in" *ngIf=error>
+    <a (click)="hide()" class="btn btn-danger btn-sm margin-right-10"><i class="icon_close_alt2"></i></a>
+
+    <strong>{{message}}</strong>
+</div>
+
+<div class="alert alert-success fade in" *ngIf=success>
+    <a (click)="hide()" class="btn btn-success btn-sm margin-right-10"><i class="icon_close_alt2"></i></a>
+
+    <strong>{{message}}</strong>
+</div>
+
+<div class="alert alert-info fade in" *ngIf=alert>
+    <a (click)="hide()" class="btn btn-alert btn-sm margin-right-10"><i class="icon_close_alt2"></i></a>
+
+    <strong>{{message}}</strong>
+</div>
+
+<div class="loading" *ngIf=loading></div>

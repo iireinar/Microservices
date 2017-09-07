@@ -1,0 +1,6 @@
+export enum Urls {
+  BASE_URL,
+  PAIS,
+  UNIDADE_FEDERATIVA,
+  MUNICIPIO
+}

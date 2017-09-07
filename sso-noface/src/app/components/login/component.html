@@ -1,0 +1,23 @@
+<div class="container" *ngIf=showView>
+    <form class="login-form" [formGroup]="form" (ngSubmit)="doLogin()">
+        <input type="hidden" formControlName="client_id" />
+        <input type="hidden" formControlName="response_type" />
+        <input type="hidden" formControlName="state" />
+
+        <div class="login-wrap">
+            <p class="login-img"><i class="icon_lock_alt"></i></p>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="icon_profile"></i></span>
+                <input type="text" class="form-control" placeholder="Username" autofocus formControlName="username">
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-addon"><i class="icon_key_alt"></i></span>
+                <input type="password" class="form-control" placeholder="Password" formControlName="password">
+            </div>
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+            <button class="btn btn-info btn-lg btn-block" type="button" (click)="register()">Register</button>
+        </div>
+    </form>
+</div>

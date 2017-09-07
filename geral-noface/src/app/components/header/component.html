@@ -1,0 +1,9 @@
+<header [ngClass]="{'header': true, 'dark-bg': true, 'hidden': !session.isLoggedIn}">
+    <div class="toggle-nav">
+        <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
+    </div>
+
+    <a routerLink="/" class="logo">Geral</a>
+
+    <app-header-navigation></app-header-navigation>
+</header>

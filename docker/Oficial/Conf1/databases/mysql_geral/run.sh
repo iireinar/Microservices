@@ -1,0 +1,1 @@
+docker run --name mysql_geral --net=host -e MYSQL_ROOT_PASSWORD=test -e MYSQL_USER=test -e MYSQL_PASSWORD=test -e MYSQL_DATABASE=geral -d mysql/mysql-server:5.7 --character-set-server=utf8 --collation-server=utf8_general_ci
